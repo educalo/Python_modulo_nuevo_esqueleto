@@ -1,2 +1,2 @@
-Esqueleto un nuevo modulo creado con el siguiente comando: python "C:\Program Files\Odoo 17.0.20241007\server\odoo-bin" scaffold contactos "C:\Program Files\Odoo 17.0.20241007\server\addons_extra"
+Esqueleto un nuevo modulo en Odoo 17 creado con el siguiente comando: python "C:\Program Files\Odoo 17.0.20241007\server\odoo-bin" scaffold contactos "C:\Program Files\Odoo 17.0.20241007\server\addons_extra"
 Está comentado. models.py, view.xml, manifest...
