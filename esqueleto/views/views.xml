@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="esqueleto.list">
+      <field name="name">esqueleto list</field>
+      <field name="model">esqueleto.esqueleto</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="esqueleto.action_window">
+      <field name="name">esqueleto window</field>
+      <field name="res_model">esqueleto.esqueleto</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="esqueleto.action_server">
+      <field name="name">esqueleto server</field>
+      <field name="model_id" ref="model_esqueleto_esqueleto"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="esqueleto" id="esqueleto.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="esqueleto.menu_1" parent="esqueleto.menu_root"/>
+    <menuitem name="Menu 2" id="esqueleto.menu_2" parent="esqueleto.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="esqueleto.menu_1_list" parent="esqueleto.menu_1"
+              action="esqueleto.action_window"/>
+    <menuitem name="Server to list" id="esqueleto" parent="esqueleto.menu_2"
+              action="esqueleto.action_server"/>
+-->
+  </data>
+</odoo>
